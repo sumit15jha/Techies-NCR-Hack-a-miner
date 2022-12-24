@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+	<title>Doctors</title>
+  <style>
+        .table-sortable th {
+          cursor: pointer;
+          background-color:hsl(186, 100%, 25%);
+          color: white;
+          font-family:Times, serif;
+
+        }
+
+        .table-sortable .th-sort-asc::after {
+          content: "\25b4";
+        }
+
+        .table-sortable .th-sort-desc::after {
+          content: "\25be";
+        }
+
+        .table-sortable .th-sort-asc::after,
+        .table-sortable .th-sort-desc::after {
+          margin-left: 5px;
+        }
+
+        .table-sortable .th-sort-asc,
+        .table-sortable .th-sort-desc {
+          background-color:hsl(186, 100%, 18%);
+        }
+        tbody{
+            text-align: center;
+        }
+        .table-sortable{
+            margin: 10%;
+            margin-left:12%;
+            box-shadow: 0 0 20px black;
+        }
+        .table-sortable th{
+            font-size: 24px;
+            padding: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .table-sortable td{
+            padding: 5px;
+            font-family:'Times New Roman', serif;
+            font-size: 18px;
+        }
+  </style>
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="logo.png" width="146" height="60" alt="Doclab home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="logo.png" width="136" height="46" alt="Doclab home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link title-md">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Doctors</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Upload Prescription</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Contactindex.html" class="navbar-link title-md">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="#" class="btn has-before title-md">Make Appointment</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+	<table class="table-sortable">
+		<thead>
+			<tr>
+				<th>Doctor Name</th>
+				<th class="th-sort-asc">Price/hr</th>
+				<th>Location</th>
+        <th>Phone Number</th>
+        <th>E-mail</th>
+        <th>Ratings(stars)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Shubham Bhugra</td>
+				<td>5000</td>
+				<td>Faridabad</td>
+        <td>798221234</td>
+        <td>shubhambhugra234@gmail.com</td>
+        <td>4.5</td>
+			</tr>
+      <tr>
+				<td>Vicky Patel</td>
+				<td>2300</td>
+				<td>Palwal</td>
+        <td>875432909</td>
+        <td>Viiicky@gmail.com</td>
+        <td>4.8</td>
+			</tr>
+      <tr>
+				<td>Gourav Kumar</td>
+				<td>5370</td>
+				<td>Palla</td>
+        <td>798221234</td>
+        <td>GouravKumar@gmail.com</td>
+        <td>3</td>
+			</tr>
+      <tr>
+				<td>Shubham chauhan</td>
+				<td>3700</td>
+				<td>Faridabad</td>
+        <td>798221234</td>
+        <td>chauhanshubham@gmail.com</td>
+        <td>2.8</td>
+			</tr>
+      <tr>
+				<td>Sagar Bhugra</td>
+				<td>8000</td>
+				<td>Greater Noida</td>
+        <td>798221234</td>
+        <td>sagar@gmail.com</td>
+        <td>4.2</td>
+			</tr>
+			<tr>
+				<td>Sumit Saini</td>
+				<td>1600</td>
+				<td>Noida</td>
+        <td>798221234</td>
+        <td>sumitsaini@gmail.com</td>
+        <td>3.4</td>
+			</tr>
+			<tr>
+				<td>Sumit Raj Jha</td>
+				<td>3200</td>
+				<td>Methapur</td>
+        <td>798254634</td>
+        <td>sumitjha@gmail.com</td>
+        <td>2.9</td>
+			</tr>
+			<tr>
+				<td>Prathana</td>
+				<td>4528</td>
+				<td>Delhi</td>
+        <td>822713238</td>
+        <td>prathna@gmail.com</td>
+        <td>4.1</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+      function sortTableByColumn(table, column, asc = true) {
+          const dirModifier = asc ? 1 : -1;
+          const tBody = table.tBodies[0];
+          const rows = Array.from(tBody.querySelectorAll("tr"));
+                  const sortedRows = rows.sort((a, b) => {
+            const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
+            const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
+        
+            return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+        });
+              while (tBody.firstChild) {
+          tBody.removeChild(tBody.firstChild);
+        }
+        tBody.append(...sortedRows);
+      
+        table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
+        table.querySelector(`th:nth-child(${column + 1})`).classList.toggle("th-sort-asc", asc);
+        table.querySelector(`th:nth-child(${column + 1})`).classList.toggle("th-sort-desc", !asc);
+      }
+      
+      document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+          headerCell.addEventListener("click", () => {
+              const tableElement = headerCell.parentElement.parentElement.parentElement;
+              const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+              const currentIsAscending = headerCell.classList.contains("th-sort-asc");
+          
+              sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+          });
+      });
+   </script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
